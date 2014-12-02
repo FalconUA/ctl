@@ -26,16 +26,8 @@ int main(int argc, char* argv[]){
 		if (i==1) std::cout << "\n";	
 		if (std::string(argv[i]) == "-r"){
 			int n = atoi(argv[++i]);
-			int r=1,g;
 			std::cout << "Finding primitive root modulo "<<n<<"\n";
-			std::cout << "    primitive root modulo: "<< (g =mp::primitive_root_modulo(n, typespec));
-/*			std::cout << "\n    power:\n";
-			for (int j=0; j<n; j++){
-				r = r*g % n;			
-				std::cout << r << " ";
-			}
-*/
-			std::cout << "\n\n";			
+			std::cout << "    primitive root modulo: "<< mp::primitive_root_modulo(n, typespec) << "\n\n";
 		} else
 		if (std::string(argv[i]) == "-f"){
 			int n = atoi(argv[++i]);
