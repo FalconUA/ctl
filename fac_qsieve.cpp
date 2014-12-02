@@ -48,8 +48,8 @@ template <typename Integer> static Integer newPrime(bool reset = false){
 namespace mp {
 
 template <typename Integer> Integer factorQuadratic(Integer N){
-    const int FCount = 6; // YAY, MAGIC NUMBERS!
-    const int TCount = 6; // YAY, AWESOME CONSTANTS
+    const int FCount = 6; 
+    const int TCount = 6; 
     Integer F[FCount] = {-1};
     Integer prime = newPrime<Integer>(true);
     for(int i = 1; i < FCount;){
