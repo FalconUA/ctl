@@ -1,9 +1,0 @@
-#include "ctlfac.hpp"
-#include "typespec.hpp"
-
-namespace mp{
-	template <typename T>
-	void fac_qsieve(T const& n, T& r1, T& r2, TypeSpecifications<T> const& algo)
-	{
-	}
-}
